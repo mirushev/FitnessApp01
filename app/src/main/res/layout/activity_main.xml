@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="YOGA EVERY DAY"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/indigo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/btnTraining"
+        android:layout_width="226dp"
+        android:layout_height="236dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnExercises"
+                android:text="Exercises"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                tools:buttonColor="@color/indigo"
+                tools:shadowColor="@color/colorPrimaryDark"
+                tools:shadowEnabled="true"
+                tools:shadowHeight="2dp"
+                tools:cornerRadius="2dp"
+                />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSetting"
+                android:text="Setting"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                tools:buttonColor="@color/indigo"
+                tools:shadowColor="@color/colorPrimaryDark"
+                tools:shadowEnabled="true"
+                tools:shadowHeight="2dp"
+                tools:cornerRadius="2dp"
+                />
+
+            
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/btnCalendar"
+            android:text="Calendar"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:buttonColor="@color/indigo"
+            tools:shadowColor="@color/colorPrimaryDark"
+            tools:shadowEnabled="true"
+            tools:shadowHeight="2dp"
+            tools:cornerRadius="0dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
